@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doors to Adventure</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            background: linear-gradient(45deg, #ff7b00, #ffbf00);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+        .doors {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            gap: 30px;
+        }
+        .door {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+            border: 5px solid #ff7b00;
+            border-radius: 15px;
+            width: 200px;
+            height: 250px;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #ffeb3b;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .door:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+            background-color: #ff9800;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        .door-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .door:hover .door-text {
+            font-size: 22px;
+            color: #fff;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-10px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose a Door</h1>
+    <div class="doors">
+        <div class="door">
+            <a href="door1.php">
+                <div>🎉</div>
+                <div class="door-text">Door 1</div>
+            </a>
+        </div>
+        <div class="door">
+            <a href="door2.php">
+                <div>🔮</div>
+                <div class="door-text">Door 2</div>
+            </a>
+        </div>
+        <div class="door">
+            <a href="door3.php">
+                <div>🌟</div>
+                <div class="door-text">Door 3</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
